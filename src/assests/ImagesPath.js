@@ -198,6 +198,7 @@ const ImagesPath = {
         c6: require('./images/LegalBridge/c6.png'),
         Icon: require('./images/LegalBridge/Icon.png'),
         Intro: require('./images/LegalBridge/DocSplash.png'),
+        document: require('./images/LegalBridge/document.png'),
 
     }
 }
