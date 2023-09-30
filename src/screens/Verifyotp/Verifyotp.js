@@ -114,105 +114,105 @@ function OtpScreen(props) {
         //     return;
         // }
 
-        const body ={
-            mobile_no : number,
-            otp:otp,
-            "action":"login"
-        }
-        showLoader(true)
-        console.log('-----------formdata:: ', body);
-        Helper.makeRequest({ url: ApiUrl.verifyotp, data: body, method: "POST" }).then((data) => {
-            hideLoader(false)
-            if (data.status === "success") {
-                Helper.setData('token', data.authToken.access);
-                console.log("token is " ,Helper.getData("token"));
-                Helper.setData('userdata', data);
-                navigation.navigate("TabNavigator")
-            //    { if (data.data.step === 1) {
-            //         navigation.reset({
-            //             routes: [{ name: "OnboardingScreen1", params: { getResData: getResData }}],
-            //             //routes: [{ name: "TabNavigator" }],
-            //             //routes: [{ name: "TermsAndConditions" }],
-            //             //routes: [{ name: "OnboardingScreen1" }],
-            //         });
-            //         return;
-            //     } else if (data.data.step === 2) {
-            //         navigation.reset({
-            //             index: 0,
-            //             // routes: [{ name: "OnboardingScreen2" }],
-            //             routes: [{ name: "TabNavigator" }],
-            //         });
-            //         return;
-            //     } else if (data.data.step === 3) {
-            //         navigation.reset({
-            //             index: 0,
-            //             // routes: [{ name: "OnboardingScreen3" }],
-            //             routes: [{ name: "TabNavigator" }],
-            //         });
-            //         return;
-            //     } else if (data.data.step === 4) {
-            //         navigation.reset({
-            //             index: 0,
-            //             // routes: [{ name: "OnboardingScreen4" }],
-            //             routes: [{ name: "TabNavigator" }],
-            //         });
-            //         return;
-            //     } else if (data.data.step === 5) {
-            //         navigation.reset({
-            //             index: 0,
-            //             // routes: [{ name: "OnboardingScreen5" }],
-            //             routes: [{ name: "TabNavigator" }],
-            //         });
-            //         return;
-            //     } else if (data.data.step === 6) {
-            //         navigation.reset({
-            //             index: 0,
-            //             // routes: [{ name: "OnboardingScreen6" }],
-            //             routes: [{ name: "TabNavigator" }],
-            //         });
-            //         return;
-            //     } else if (data.data.step === 7) {
-            //         navigation.reset({
-            //             index: 0,
-            //             // routes: [{ name: "OnboardingScreen7" }],
-            //             routes: [{ name: "TabNavigator" }],
-            //         });
-            //         return;
-            //     } else if (data.data.step === 8) {
-            //         navigation.reset({
-            //             index: 0,
-            //             // routes: [{ name: "OnboardingScreen8" }],
-            //             routes: [{ name: "TabNavigator" }],
-            //         });
-            //         return;
-            //     } else if (data.data.step === 9) {
-            //         navigation.reset({
-            //             index: 0,
-            //             // routes: [{ name: "OnboardingScreen9" }],
-            //             routes: [{ name: "TabNavigator" }],
-            //         });
-            //         return;
-            //     } else if (data.data.step === 10) {
-            //         navigation.reset({
-            //             index: 0,
-            //             routes: [{ name: "TabNavigator" }],
-            //         });
-            //         return;
-            //     }}
-            } else {
-             //   Helper.showToast(data.message)
-            Helper.showToast(data.message)
+        // const body ={
+        //     mobile_no : number,
+        //     otp:otp,
+        //     "action":"login"
+        // }
+        // showLoader(true)
+        // console.log('-----------formdata:: ', body);
+        // Helper.makeRequest({ url: ApiUrl.verifyotp, data: body, method: "POST" }).then((data) => {
+        //     hideLoader(false)
+        //     if (data.status === "success") {
+        //         Helper.setData('token', data.authToken.access);
+        //         console.log("token is " ,Helper.getData("token"));
+        //         Helper.setData('userdata', data);
+        //         navigation.navigate("TabNavigator")
+        //     //    { if (data.data.step === 1) {
+        //     //         navigation.reset({
+        //     //             routes: [{ name: "OnboardingScreen1", params: { getResData: getResData }}],
+        //     //             //routes: [{ name: "TabNavigator" }],
+        //     //             //routes: [{ name: "TermsAndConditions" }],
+        //     //             //routes: [{ name: "OnboardingScreen1" }],
+        //     //         });
+        //     //         return;
+        //     //     } else if (data.data.step === 2) {
+        //     //         navigation.reset({
+        //     //             index: 0,
+        //     //             // routes: [{ name: "OnboardingScreen2" }],
+        //     //             routes: [{ name: "TabNavigator" }],
+        //     //         });
+        //     //         return;
+        //     //     } else if (data.data.step === 3) {
+        //     //         navigation.reset({
+        //     //             index: 0,
+        //     //             // routes: [{ name: "OnboardingScreen3" }],
+        //     //             routes: [{ name: "TabNavigator" }],
+        //     //         });
+        //     //         return;
+        //     //     } else if (data.data.step === 4) {
+        //     //         navigation.reset({
+        //     //             index: 0,
+        //     //             // routes: [{ name: "OnboardingScreen4" }],
+        //     //             routes: [{ name: "TabNavigator" }],
+        //     //         });
+        //     //         return;
+        //     //     } else if (data.data.step === 5) {
+        //     //         navigation.reset({
+        //     //             index: 0,
+        //     //             // routes: [{ name: "OnboardingScreen5" }],
+        //     //             routes: [{ name: "TabNavigator" }],
+        //     //         });
+        //     //         return;
+        //     //     } else if (data.data.step === 6) {
+        //     //         navigation.reset({
+        //     //             index: 0,
+        //     //             // routes: [{ name: "OnboardingScreen6" }],
+        //     //             routes: [{ name: "TabNavigator" }],
+        //     //         });
+        //     //         return;
+        //     //     } else if (data.data.step === 7) {
+        //     //         navigation.reset({
+        //     //             index: 0,
+        //     //             // routes: [{ name: "OnboardingScreen7" }],
+        //     //             routes: [{ name: "TabNavigator" }],
+        //     //         });
+        //     //         return;
+        //     //     } else if (data.data.step === 8) {
+        //     //         navigation.reset({
+        //     //             index: 0,
+        //     //             // routes: [{ name: "OnboardingScreen8" }],
+        //     //             routes: [{ name: "TabNavigator" }],
+        //     //         });
+        //     //         return;
+        //     //     } else if (data.data.step === 9) {
+        //     //         navigation.reset({
+        //     //             index: 0,
+        //     //             // routes: [{ name: "OnboardingScreen9" }],
+        //     //             routes: [{ name: "TabNavigator" }],
+        //     //         });
+        //     //         return;
+        //     //     } else if (data.data.step === 10) {
+        //     //         navigation.reset({
+        //     //             index: 0,
+        //     //             routes: [{ name: "TabNavigator" }],
+        //     //         });
+        //     //         return;
+        //     //     }}
+        //     } else {
+        //      //   Helper.showToast(data.message)
+        //     Helper.showToast(data.message)
               
             
-                hideLoader(false)
-            }
+        //         hideLoader(false)
+        //     }
 
-          //  Helper.showToast(data.message)
-        }).catch(err => {
-            console.log("----err::: ", err.message)
-            // Helper.showToast(err.message)
-            hideLoader(false)
-        })
+        //   //  Helper.showToast(data.message)
+        // }).catch(err => {
+        //     console.log("----err::: ", err.message)
+        //     // Helper.showToast(err.message)
+        //     hideLoader(false)
+        // })
     }
 
     const handleInput = (text) => {

@@ -43,7 +43,7 @@ export default function Cases() {
 
 
   <ScrollView
-        style={{ flex: 1, backgroundColor: colors.white }}
+        style={{ flex: 1, backgroundColor: colors.white, }}
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ flexGrow: 1 }}>
         <View style={{
@@ -220,9 +220,9 @@ onPress = {() => {navigation.navigate('AddCases')}}>
 <TouchableOpacity
   onPress={() => { navigation.navigate("AddCases") }}
   style={{
-    position: "absolute",
-    bottom: Utils.ScreenHeight(1),
-    right: Utils.ScreenWidth(8),
+
+
+   alignSelf:"center",
     height: Utils.ScreenHeight(6),
     width: Utils.ScreenHeight(6),
     backgroundColor: colors.primary,

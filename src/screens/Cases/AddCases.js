@@ -4,6 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import { Utils, colors } from '../../contants'
 import { ScrollView, TextInput, TouchableOpacity } from 'react-native-gesture-handler'
 import ImagesPath from '../../assests/ImagesPath'
+import { useNavigation } from '@react-navigation/native'
 
 const AddCases = () => {
   const navigation = useNavigation();
