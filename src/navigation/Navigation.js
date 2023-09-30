@@ -28,6 +28,8 @@ import test from '../screens/test/test';
 import LawyerDetails from '../screens/LawyerDetails/LawyerDetails';
 import BookAppoinment from '../screens/BookAppoinment/BookAppoinment';
 import OCR from '../screens/OCR/OCR';
+import SmartContractScreen from '../screens/SmartContractScreen/SmartContractScreen';
+
 
 
 
@@ -40,7 +42,7 @@ function Navigation() {
     return (
         <NavigationContainer>
             <Stack.Navigator
-                initialRouteName="Splash"
+                initialRouteName="SmartContractScreen"
                 screenOptions={{ headerShown: false }}>
                  <Stack.Screen name="Splash" component={Splash} />
                 <Stack.Screen name="IntroScreen" component={IntroScreen} />
@@ -58,6 +60,7 @@ function Navigation() {
                 <Stack.Screen name="CheckStatus" component={CheckStatus} />
                 <Stack.Screen name="Uploadtoipfs" component={Uploadtoipfs} />
                 <Stack.Screen name="caseresults" component={caseresults} />
+                <Stack.Screen name="SmartContractScreen" component={SmartContractScreen} />
                 <Stack.Screen name="test" component={test} />
                 <Stack.Screen
                 name="Settings" component={Settings} />
