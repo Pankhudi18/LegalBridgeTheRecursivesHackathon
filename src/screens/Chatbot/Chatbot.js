@@ -3,7 +3,7 @@ import React, { useState, useCallback, useEffect } from 'react'
 import { GiftedChat } from 'react-native-gifted-chat'
 
 // import RNRasa from 'react-native-rasa';
-const HOST = 'https://d689-45-249-42-93.ngrok-free.app';
+
 const Chatbot = () => {
   const [messages, setMessages] = useState([])
 

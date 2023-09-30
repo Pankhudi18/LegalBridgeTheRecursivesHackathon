@@ -28,6 +28,9 @@ import test from '../screens/test/test';
 import LawyerDetails from '../screens/LawyerDetails/LawyerDetails';
 import BookAppoinment from '../screens/BookAppoinment/BookAppoinment';
 import OCR from '../screens/OCR/OCR';
+import SmartContractScreen from '../screens/SmartContractScreen/SmartContractScreen';
+import ConnectWalletScreen from '../screens/ConnectWalletScreen/ConnectWalletScreen';
+
 
 
 
@@ -37,6 +40,7 @@ import OCR from '../screens/OCR/OCR';
 const Stack = createNativeStackNavigator();
 
 function Navigation() {
+
     return (
         <NavigationContainer>
             <Stack.Navigator
@@ -58,6 +62,7 @@ function Navigation() {
                 <Stack.Screen name="CheckStatus" component={CheckStatus} />
                 <Stack.Screen name="Uploadtoipfs" component={Uploadtoipfs} />
                 <Stack.Screen name="caseresults" component={caseresults} />
+                <Stack.Screen name="SmartContractScreen" component={SmartContractScreen} />
                 <Stack.Screen name="test" component={test} />
                 <Stack.Screen
                 name="Settings" component={Settings} />
@@ -68,6 +73,7 @@ function Navigation() {
 
                 {/* Client screens */}
                 <Stack.Screen name="Loginclient" component={Loginclient} />
+                <Stack.Screen name="ConnectWalletScreen" component={ConnectWalletScreen} />
                 <Stack.Screen name="Signupclient" component={Signupclient} />
                 <Stack.Screen name="Verifyotpclient" component={Verifyotpclient} />
                 <Stack.Screen name="LawyerDetails" component={LawyerDetails} />

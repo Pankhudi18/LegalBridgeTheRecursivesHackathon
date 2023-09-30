@@ -20,6 +20,7 @@ import ClientHomeScreen from '../screens/ClientHomeScreen/ClientHomeScreen';
 import ClientSearchScreen from '../screens/ClientSearchScreen/ClientSearchScreen';
 import ClientProfileScreen from '../screens/ClientProfileScreen/ClientProfileScreen';
 import Chatbot from '../screens/Chatbot/Chatbot';
+import UploadDocuments from '../screens/UploadDocuments/UploadDocuments';
 
 
 
@@ -85,9 +86,10 @@ function ClientTabNavigator() {
                         <View style={{}}>
                             <View style={{ flexDirection: "row", justifyContent: "center", alignItems: "center", marginRight: Utils.ScreenWidth(5) }}>
                                 <TouchableOpacity
+                                onPress={()=>{navigation.navigate("ConnectWalletScreen")}}
 
                                 >
-                                    <Image source={ImagesPath.LegalBridge.bell} style={{
+                                    <Image source={ImagesPath.home.wallet_icon} style={{
                                         resizeMode: 'contain',
                                         tintColor: colors.blackdark,
 
@@ -144,9 +146,9 @@ function ClientTabNavigator() {
                         <View style={{}}>
                             <View style={{ flexDirection: "row", justifyContent: "center", alignItems: "center", marginRight: Utils.ScreenWidth(5) }}>
                                 <TouchableOpacity
-
+                                    onPress={()=>{navigation.navigate("ConnectWalletScreen")}}
                                 >
-                                    <Image source={ImagesPath.LegalBridge.bell} style={{
+                                    <Image source={ImagesPath.home.wallet_icon} style={{
                                         resizeMode: 'contain',
                                         tintColor: colors.blackdark,
 
@@ -203,9 +205,9 @@ function ClientTabNavigator() {
                         <View style={{}}>
                             <View style={{ flexDirection: "row", justifyContent: "center", alignItems: "center", marginRight: Utils.ScreenWidth(5) }}>
                                 <TouchableOpacity
-
+ onPress={()=>{navigation.navigate("ConnectWalletScreen")}}
                                 >
-                                    <Image source={ImagesPath.LegalBridge.bell} style={{
+                                    <Image source={ImagesPath.home.wallet_icon} style={{
                                         resizeMode: 'contain',
                                         tintColor: colors.blackdark,
 
@@ -248,12 +250,12 @@ function ClientTabNavigator() {
                 }}
             />
             <Tab.Screen
-                name="BareActs"
-                component={BareActs}
+                name="UploadDocuments"
+                component={UploadDocuments}
                 options={{
                     headerLeft: (title) => {
                         return (
-                            <Text style={{ color: colors.black, fontSize: 20, fontWeight: 600, marginLeft: Utils.ScreenWidth(5) }}>Bare Acts</Text>
+                            <Text style={{ color: colors.black, fontSize: 20, fontWeight: 600, marginLeft: Utils.ScreenWidth(5) }}>Legal Bridge</Text>
                         )
                     },
                     headerRight: () => {
@@ -261,9 +263,9 @@ function ClientTabNavigator() {
                             <View style={{}}>
                                 <View style={{ flexDirection: "row", justifyContent: "center", alignItems: "center", marginRight: Utils.ScreenWidth(5) }}>
                                     <TouchableOpacity
-    
+                                     onPress={()=>{navigation.navigate("ConnectWalletScreen")}}
                                     >
-                                        <Image source={ImagesPath.LegalBridge.bell} style={{
+                                        <Image source={ImagesPath.home.wallet_icon} style={{
                                             resizeMode: 'contain',
                                             tintColor: colors.blackdark,
     
@@ -294,9 +296,9 @@ function ClientTabNavigator() {
                     tabBarIcon: ({ focused }) => {
                         return (
                             <RenderTabIcon
-                                title="Bare Acts"
+                                title="Documents"
                                 isFocused={focused}
-                                activeIcon={ImagesPath.home.man_icon}
+                                activeIcon={ImagesPath.LegalBridge.document}
                             // inActiveIcon={ImagesPath.Tabbar.bottom_k}
                             // title={"Katlego"}
                             />
@@ -318,9 +320,9 @@ function ClientTabNavigator() {
                             <View style={{}}>
                                 <View style={{ flexDirection: "row", justifyContent: "center", alignItems: "center", marginRight: Utils.ScreenWidth(5) }}>
                                     <TouchableOpacity
-    
+                                     onPress={()=>{navigation.navigate("ConnectWalletScreen")}}
                                     >
-                                        <Image source={ImagesPath.LegalBridge.bell} style={{
+                                        <Image source={ImagesPath.home.wallet_icon} style={{
                                             resizeMode: 'contain',
                                             tintColor: colors.blackdark,
     
