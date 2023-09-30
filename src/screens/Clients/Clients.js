@@ -47,7 +47,7 @@ const Clients = () => {
                <View style={{flexDirection:"row",alignItems:"center", marginLeft:Utils.ScreenWidth(4) }}>
                 <Image source={ImagesPath.home.manImg} style={{height:Utils.ScreenHeight(6), width:Utils.ScreenWidth(14), resizeMode:"contain"}}/>
                 <View style={{marginLeft:Utils.ScreenWidth(4)}}>
-                <Text style={{fontSize:17, fontWeight:"400", color: colors.black}}>Vishesh Gatha</Text>
+                <Text style={{fontSize:17, fontWeight:"400", color: colors.black}}>Raju Verma</Text>
                 {/* <Text></Text> */}
                 </View>
                 </View>
@@ -60,7 +60,7 @@ const Clients = () => {
                <View style={{flexDirection:"row",alignItems:"center", marginLeft:Utils.ScreenWidth(4) }}>
                 <Image source={ImagesPath.home.manImg} style={{height:Utils.ScreenHeight(6), width:Utils.ScreenWidth(14), resizeMode:"contain"}}/>
                 <View style={{marginLeft:Utils.ScreenWidth(4)}}>
-                <Text style={{fontSize:17, fontWeight:"400", color: colors.black}}>Vishesh Gatha</Text>
+                <Text style={{fontSize:17, fontWeight:"400", color: colors.black}}>Alia Dcruz</Text>
                 {/* <Text></Text> */}
                 </View>
                 </View>
@@ -73,7 +73,7 @@ const Clients = () => {
                <View style={{flexDirection:"row",alignItems:"center", marginLeft:Utils.ScreenWidth(4) }}>
                 <Image source={ImagesPath.home.manImg} style={{height:Utils.ScreenHeight(6), width:Utils.ScreenWidth(14), resizeMode:"contain"}}/>
                 <View style={{marginLeft:Utils.ScreenWidth(4)}}>
-                <Text style={{fontSize:17, fontWeight:"400", color: colors.black}}>Vishesh Gatha</Text>
+                <Text style={{fontSize:17, fontWeight:"400", color: colors.black}}>Kamlesh Dhun</Text>
                 {/* <Text></Text> */}
                 </View>
                 </View>

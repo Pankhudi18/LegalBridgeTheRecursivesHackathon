@@ -575,9 +575,9 @@ const CalendarScreen = (props) => {
                                 <View style={{height:Utils.ScreenHeight(8), width:Utils.ScreenWidth(2), backgroundColor: colors.primary}}></View>
                                 <View style={{flex:1, flexDirection:"row", alignItems:"center", justifyContent:"space-between", backgroundColor:colors.secondary, height:Utils.ScreenHeight(8), marginLeft:Utils.ScreenWidth(3), marginRight:Utils.ScreenWidth(2), borderRadius:12}}>
                                    <View style={{padding:Utils.ScreenHeight(1), marginTop: Utils.ScreenHeight(1), marginBottom: Utils.ScreenHeight(1), marginLeft: Utils.ScreenWidth(2)}}>
-                                    <Text style={{fontWeight:500, fontSize:13, color: colors.primary}}>Vishesh Gatha</Text>
+                                    <Text style={{fontWeight:500, fontSize:13, color: colors.primary}}>Kresha Mehta</Text>
                                     <Text style={{fontWeight:300, fontSize:11, color: colors.primary}}>Video Appointment</Text>
-                                    <Text style={{fontWeight:500, fontSize:10, marginTop:Utils.ScreenHeight(0), color: colors.primary }}>8pm-10pm</Text>
+                                    <Text style={{fontWeight:500, fontSize:10, marginTop:Utils.ScreenHeight(0), color: colors.primary }}>9:45pm-10:45pm</Text>
                                     </View>
                                     <TouchableOpacity
                                     onPress={()=>{navigation.navigate("VideoCall")}}
@@ -591,9 +591,9 @@ const CalendarScreen = (props) => {
                                 <View style={{height:Utils.ScreenHeight(8), width:Utils.ScreenWidth(2), backgroundColor: colors.primary}}></View>
                                 <View style={{flex:1, flexDirection:"row", alignItems:"center", justifyContent:"space-between", backgroundColor:colors.secondary, height:Utils.ScreenHeight(8), marginLeft:Utils.ScreenWidth(3), marginRight:Utils.ScreenWidth(2), borderRadius:12}}>
                                    <View style={{padding:Utils.ScreenHeight(1), marginTop: Utils.ScreenHeight(1), marginBottom: Utils.ScreenHeight(1), marginLeft: Utils.ScreenWidth(2)}}>
-                                    <Text style={{fontWeight:500, fontSize:13, color: colors.primary}}>Vishesh Gatha</Text>
+                                    <Text style={{fontWeight:500, fontSize:13, color: colors.primary}}>Pankhudi Jaiswal</Text>
                                     <Text style={{fontWeight:300, fontSize:11, color: colors.primary}}>Video Appointment</Text>
-                                    <Text style={{fontWeight:500, fontSize:10, marginTop:Utils.ScreenHeight(0), color: colors.primary }}>8pm-10pm</Text>
+                                    <Text style={{fontWeight:500, fontSize:10, marginTop:Utils.ScreenHeight(0), color: colors.primary }}>2pm-3pm</Text>
                                     </View>
                                     <TouchableOpacity
                                     onPress={()=>{navigation.navigate("VideoCall")}}
@@ -607,9 +607,9 @@ const CalendarScreen = (props) => {
                                 <View style={{height:Utils.ScreenHeight(8), width:Utils.ScreenWidth(2), backgroundColor: colors.primary}}></View>
                                 <View style={{flex:1, flexDirection:"row", alignItems:"center", justifyContent:"space-between", backgroundColor:colors.secondary, height:Utils.ScreenHeight(8), marginLeft:Utils.ScreenWidth(3), marginRight:Utils.ScreenWidth(2), borderRadius:12}}>
                                    <View style={{padding:Utils.ScreenHeight(1), marginTop: Utils.ScreenHeight(1), marginBottom: Utils.ScreenHeight(1), marginLeft: Utils.ScreenWidth(2)}}>
-                                    <Text style={{fontWeight:500, fontSize:13, color: colors.primary}}>Vishesh Gatha</Text>
+                                    <Text style={{fontWeight:500, fontSize:13, color: colors.primary}}>Pankaj Jaiswal</Text>
                                     <Text style={{fontWeight:300, fontSize:11, color: colors.primary}}>Video Appointment</Text>
-                                    <Text style={{fontWeight:500, fontSize:10, marginTop:Utils.ScreenHeight(0), color: colors.primary }}>8pm-10pm</Text>
+                                    <Text style={{fontWeight:500, fontSize:10, marginTop:Utils.ScreenHeight(0), color: colors.primary }}>11:30am-12:30pm</Text>
                                     </View>
                                     <TouchableOpacity
                                     onPress={()=>{navigation.navigate("VideoCall")}}
@@ -623,7 +623,7 @@ const CalendarScreen = (props) => {
                                 <View style={{height:Utils.ScreenHeight(8), width:Utils.ScreenWidth(2), backgroundColor: colors.primary}}></View>
                                 <View style={{flex:1, flexDirection:"row", alignItems:"center", justifyContent:"space-between", backgroundColor:colors.secondary, height:Utils.ScreenHeight(8), marginLeft:Utils.ScreenWidth(3), marginRight:Utils.ScreenWidth(2), borderRadius:12}}>
                                    <View style={{padding:Utils.ScreenHeight(1), marginTop: Utils.ScreenHeight(1), marginBottom: Utils.ScreenHeight(1), marginLeft: Utils.ScreenWidth(2)}}>
-                                    <Text style={{fontWeight:500, fontSize:13, color: colors.primary}}>Vishesh Gatha</Text>
+                                    <Text style={{fontWeight:500, fontSize:13, color: colors.primary}}>Sanjay Mehta</Text>
                                     <Text style={{fontWeight:300, fontSize:11, color: colors.primary}}>Video Appointment</Text>
                                     <Text style={{fontWeight:500, fontSize:10, marginTop:Utils.ScreenHeight(0), color: colors.primary }}>8pm-10pm</Text>
                                     </View>

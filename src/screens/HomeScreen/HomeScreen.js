@@ -78,7 +78,7 @@ const HomeScreen = () => {
 
                 <View style={{ marginTop: Utils.ScreenHeight(3), }}>
                     <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                        <Text style={{ marginHorizontal: Utils.ScreenWidth(4), fontSize: 18, fontWeight: 600, marginBottom: Utils.ScreenHeight(1.5) }}>Trending </Text>
+                        <Text style={{color:'black', marginHorizontal: Utils.ScreenWidth(4), fontSize: 18, fontWeight: 600, marginBottom: Utils.ScreenHeight(1.5) }}>Trending </Text>
                         <Text style={{ marginHorizontal: Utils.ScreenWidth(4), fontSize: 14, fontWeight: 400, marginBottom: Utils.ScreenHeight(1.5), color: colors.grey }}>See All photos</Text>
                     </View>
                     <FlatList
@@ -88,7 +88,7 @@ const HomeScreen = () => {
 
                 <View style={{ marginTop: Utils.ScreenHeight(3),marginHorizontal: Utils.ScreenWidth(4) }}>
                     <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                        <Text style={{  fontSize: 18, fontWeight: 600, marginBottom: Utils.ScreenHeight(1.5) }}>Latest</Text>
+                        <Text style={{ color:'black', fontSize: 18, fontWeight: 600, marginBottom: Utils.ScreenHeight(1.5) }}>Latest</Text>
 
                     </View>
                     <FlatList
