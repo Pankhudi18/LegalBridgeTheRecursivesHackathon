@@ -45,10 +45,10 @@ const _advocate = "0x87e406BEe0a0D30D0FA9D535e0841666FC404652";
 const _client = "0x742d35Cc6634C0532925a3b844Bc454e4438f44e";
 const _caseType = 1; // Replace with the appropriate case type ID
 const _caseDescription = "Sample case description";
-const _fillingDate = Math.floor(Date.now() / 1000); // Current timestamp
-const _hearingDate = Math.floor(Date.now() / 1000) + 86400; // Tomorrow's timestamp
-const _deadlineDate = Math.floor(Date.now() / 1000) + 172800; // Two days from now timestamp
-const _status = "Processing"; // Should match one of the valid case statuses in your contract
+const _fillingDate = 23; // Current timestamp
+const _hearingDate = 23; // Tomorrow's timestamp
+const _deadlineDate = 23; // Two days from now timestamp
+const _status = 1; // Should match one of the valid case statuses in your contract
 
 const call = async () => {
 try {
