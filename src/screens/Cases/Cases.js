@@ -143,95 +143,18 @@ onPress = {() => {navigation.navigate('AddCases')}}>
 </TouchableOpacity>
 
 
-<TouchableOpacity style={{
-  marginTop: Utils.ScreenHeight(0.5),
-  height: Utils.ScreenHeight(10),
-  borderRadius: 8, 
-  borderWidth: 0.5,
-  borderColor: colors.primary,
-  marginBottom: Utils.ScreenHeight(1.5),
-  marginHorizontal: Utils.ScreenWidth(4),
-  flexDirection: "row",
-  backgroundColor: colors.white,
-  justifyContent: "space-between",
-  alignItems: "flex-start",
-}}>
-  <View>
-    <Text style={{ fontWeight: '500', fontSize: 11,
-                  color: colors.grey, marginHorizontal: Utils.ScreenHeight(1), marginTop: Utils.ScreenHeight(0.5) }}>
-      CID: 1234567891234
-    </Text>
-
-  <View style = {{flexDirection: 'row', }}>
-    <View>
-      <Text style = {{fontWeight: 900, fontSize: 14, color: colors.grey, marginHorizontal: Utils.ScreenHeight(2), marginTop: Utils.ScreenHeight(1)}}> XYZ Murder Case</Text>
-      <Text style = {{fontWeight: 400, fontSize: 12, color: colors.grey, marginHorizontal: Utils.ScreenHeight(2)}}> By: Rishabh Sinha</Text>
-    </View>
-
-    <View style={{ marginLeft: Utils.ScreenWidth(8), backgroundColor: colors.secondary, height: Utils.ScreenHeight(5), borderRadius: 8, marhinHorizontal: Utils.ScreenHeight(1),
-       width: Utils.ScreenWidth(25), alignItems: 'center', justifyContent: 'center', flexDirection: 'row'}}>
-      <Text style ={{color: colors.black}}>Processing</Text>
-   </View>
-
-   <View>
-       <Image source={ImagesPath.home.three_dots} style={{height:Utils.ScreenHeight(4), width:Utils.ScreenWidth(14), resizeMode:"contain"}}/>
-   </View>
-  </View>
-  </View>
-</TouchableOpacity>
-
-<TouchableOpacity style={{
-  marginTop: Utils.ScreenHeight(0.5),
-  height: Utils.ScreenHeight(10),
-  borderRadius: 8, 
-  borderWidth: 0.5,
-  borderColor: colors.primary,
-  marginBottom: Utils.ScreenHeight(1.5),
-  marginHorizontal: Utils.ScreenWidth(4),
-  flexDirection: "row",
-  backgroundColor: colors.white,
-  justifyContent: "space-between",
-  alignItems: "flex-start",
-}}>
-  <View>
-    <Text style={{ fontWeight: '500', fontSize: 11,
-                  color: colors.grey, marginHorizontal: Utils.ScreenHeight(1), marginTop: Utils.ScreenHeight(0.5) }}>
-      CID: 1234567891234
-    </Text>
-
-  <View style = {{flexDirection: 'row', }}>
-    <View>
-      <Text style = {{fontWeight: 900, fontSize: 14, color: colors.grey, marginHorizontal: Utils.ScreenHeight(2), marginTop: Utils.ScreenHeight(1)}}> XYZ Murder Case</Text>
-      <Text style = {{fontWeight: 400, fontSize: 12, color: colors.grey, marginHorizontal: Utils.ScreenHeight(2)}}> By: Rishabh Sinha</Text>
-    </View>
-
-    <View style={{ marginLeft: Utils.ScreenWidth(8), backgroundColor: colors.secondary, height: Utils.ScreenHeight(5), borderRadius: 8, marhinHorizontal: Utils.ScreenHeight(1),
-       width: Utils.ScreenWidth(25), alignItems: 'center', justifyContent: 'center', flexDirection: 'row'}}>
-      <Text style ={{color: colors.black}}>Processing</Text>
-   </View>
-
-   <View>
-       <Image source={ImagesPath.home.three_dots} style={{height:Utils.ScreenHeight(4), width:Utils.ScreenWidth(14), resizeMode:"contain"}}/>
-   </View>
-  </View>
-  </View>
-</TouchableOpacity>
-
-<TouchableOpacity
-  onPress={() => { navigation.navigate("AddCases") }}
-  style={{
 
 
-   alignSelf:"center",
-    height: Utils.ScreenHeight(6),
-    width: Utils.ScreenHeight(6),
-    backgroundColor: colors.primary,
-    borderRadius: 40
-  }}>
-<View style = {{alignItems: 'center', justifyContent: 'center', top: Utils.ScreenHeight(-1)}}>
-  <Text style={{ fontSize: 40, color: colors.white }}>+</Text>
-  </View>
-</TouchableOpacity>
+
+
+<TouchableOpacity 
+          onPress={()=>{navigation.navigate("AddCases")}}
+          style={{
+              marginTop:Utils.ScreenHeight(4),
+              justifyContent:"center",alignSelf:'center',
+              height:Utils.ScreenHeight(6), width:Utils.ScreenWidth(55), backgroundColor:colors.primary, borderRadius:12}}>
+                  <Text style={{textAlign:"center", fontSize:Utils.ScreenHeight(1.5), color:colors.white, fontWeight:500}}>Add Case</Text>
+            </TouchableOpacity>
 
         
       </ScrollView>

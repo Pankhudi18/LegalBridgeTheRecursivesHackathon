@@ -5,6 +5,7 @@ import { Utils, colors } from '../../contants'
 import { ScrollView, TextInput, TouchableOpacity } from 'react-native-gesture-handler'
 import ImagesPath from '../../assests/ImagesPath'
 import { useNavigation } from '@react-navigation/native'
+import { useContract, useContractWrite } from "@thirdweb-dev/react-native";
 
 const AddCases = () => {
   const navigation = useNavigation();
@@ -34,6 +35,31 @@ const AddCases = () => {
        console.error('API Error:', error);
      }
   };
+
+
+  const { contract } = useContract("0xc229671C9aD9451b6412eF0858A3F32D61E7E2C6");
+const { mutateAsync: createCase, isLoading } = useContractWrite(contract, "createCase");
+
+// Sample data for the parameters
+const _advocate = "0x87e406BEe0a0D30D0FA9D535e0841666FC404652";
+const _client = "0x742d35Cc6634C0532925a3b844Bc454e4438f44e";
+const _caseType = 1; // Replace with the appropriate case type ID
+const _caseDescription = "Sample case description";
+const _fillingDate = Math.floor(Date.now() / 1000); // Current timestamp
+const _hearingDate = Math.floor(Date.now() / 1000) + 86400; // Tomorrow's timestamp
+const _deadlineDate = Math.floor(Date.now() / 1000) + 172800; // Two days from now timestamp
+const _status = "Processing"; // Should match one of the valid case statuses in your contract
+
+const call = async () => {
+try {
+const data = await createCase({
+args: [_advocate, _client, _caseType, _caseDescription, _fillingDate, _hearingDate, _deadlineDate, _status],
+});
+console.info("Contract call success", data);
+} catch (err) {
+console.error("Contract call failure", err);
+}
+}
 
   return (
     <SafeAreaView style = {{backgroundColor: colors.white, height: '100%'}}>
@@ -71,15 +97,7 @@ const AddCases = () => {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ flexGrow: 1 }}>
 
-    <View style = {{flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: Utils.ScreenWidth(5)}}>    
-      <Text style={{ color: colors.grey, fontSize: 15, fontWeight: '600', marginTop: Utils.ScreenHeight(1) }}>
-       • Case Info
-     </Text>
-
-     <Text style={{ color: colors.grey, fontSize: 15, fontWeight: '600', marginTop: Utils.ScreenHeight(1) }}>
-       Status Attachment
-     </Text>
-     </View>    
+    
 
             <View style = {{ marginLeft: Utils.ScreenWidth(3), marginTop: Utils.ScreenHeight(3), flexDirection: 'row'}}>
               <Text style = {{ color: colors.black, fontWeight: 600, fontSize: 16}}>Case Type</Text>
@@ -191,7 +209,7 @@ const AddCases = () => {
                                          justifyContent: 'center',
                                          height: Utils.ScreenHeight(7), 
                                          width: '100%'}}
-                                         onPress  = {() => {handleSubmit()}}>
+                                         onPress  = {() => {call()}}>
                <Text style = {{ color: colors.white, fontWeight: 400, fontSize: 16,  marginHorizontal: Utils.ScreenHeight(6),}}>
                 Continue
                </Text>
